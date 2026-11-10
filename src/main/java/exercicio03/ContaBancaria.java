@@ -16,8 +16,12 @@ public class ContaBancaria {
         saldo+=valor;
     }
 
-    public void sacar(double valor) {
-        saldo-=valor;
+    public String sacar(double valor) {
+        if (saldo >= valor) {
+            saldo -= valor;
+            return "Valor sacado";
+        }
+        return "Saldo insuficiente";
     }
 
     public String consultarSaldo() {
