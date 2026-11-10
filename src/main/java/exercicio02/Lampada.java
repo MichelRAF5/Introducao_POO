@@ -4,7 +4,10 @@ public class Lampada {
     private String comodo;
     private boolean estaLigada = false;
 
-    public Lampada(String comodo) {
+    public Lampada() {
+    }
+
+    public void setComodo(String comodo) {
         this.comodo = comodo;
     }
 

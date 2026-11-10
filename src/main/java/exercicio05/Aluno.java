@@ -5,9 +5,19 @@ public class Aluno {
     private double nota1;
     private double nota2;
 
-    public Aluno(String nome, double nota1, double nota2) {
+    public Aluno() {
+
+    }
+
+    public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public void setNota1(double nota1) {
         this.nota1 = nota1;
+    }
+
+    public void setNota2(double nota2) {
         this.nota2 = nota2;
     }
 
@@ -16,6 +26,6 @@ public class Aluno {
     }
 
     public String verificarSituacao() {
-        return calcularMedia() > 7.0 ? "APROVADO" : "REPROVADO";
+        return calcularMedia() > 7.0 ? "O aluno " + nome + " está APROVADO" : "O aluno " + nome + " está REPROVADO";
     }
 }

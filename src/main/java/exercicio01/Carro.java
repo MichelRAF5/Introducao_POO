@@ -5,8 +5,15 @@ public class Carro {
     private String modelo;
     private Double velocidade = 0.0;
 
-    public Carro(String marca, String modelo) {
+    public Carro() {
+
+    }
+
+    public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 

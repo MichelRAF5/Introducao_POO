@@ -4,9 +4,12 @@ public class ContaBancaria {
     private String titular;
     private double saldo;
 
-    public ContaBancaria(String titular, double saldo) {
-        this.titular = titular;
+    public ContaBancaria(double saldo) {
         this.saldo = saldo;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
     }
 
     public void depositar(double valor) {
